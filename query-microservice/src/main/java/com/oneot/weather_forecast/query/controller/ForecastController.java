@@ -28,7 +28,7 @@ import java.util.Optional;
  * It provides endpoints for clients to request forecast data for the current day and specific locations.
  */
 @RestController
-@RequestMapping("${routes.api.base}") // Base URL for the API
+@RequestMapping("${routes.api.v1-base}") // Base URL for the API
 @Validated // Enables validation for method parameters
 @Tag(name = "Forecast Controller", description = "Forecast Controller API") // Swagger tag for API documentation
 public class ForecastController {

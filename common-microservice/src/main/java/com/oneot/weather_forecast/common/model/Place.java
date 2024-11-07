@@ -15,6 +15,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "place", indexes = {
+    @Index(name = "idx_place_name", columnList = "name")
+})
 public class Place extends WeatherAttributes {
     
     /**

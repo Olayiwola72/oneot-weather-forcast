@@ -13,9 +13,11 @@ import java.util.List;
  */
 @Entity
 @NoArgsConstructor
-@Table(name = "night_forecast") // Change the table name to avoid conflict
 @Getter
 @Setter
+@Table(name = "night_forecast", indexes = {
+    @Index(name = "idx_night_forecast_id", columnList = "id")
+})
 public class Night extends WeatherPeriod {
 
     @Id

@@ -15,6 +15,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "forecast", indexes = {
+    @Index(name = "idx_forecast_date", columnList = "date")
+})
 public class Forecast {
     /**
      * Unique identifier for the forecast.

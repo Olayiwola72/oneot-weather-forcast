@@ -12,10 +12,12 @@ import java.util.List;
  * This class extends WeatherPeriod to specifically model daytime weather attributes.
  */
 @Entity
-@Table(name = "day_forecast")  // DAY is a reserved keyword. Change the table name to avoid conflict
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "day_forecast", indexes = {
+    @Index(name = "idx_day_forecast_id", columnList = "id") // DAY is a reserved keyword. Changing the table name to avoid conflict
+})
 public class Day extends WeatherPeriod {
 
     @Id
