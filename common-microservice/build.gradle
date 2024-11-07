@@ -17,7 +17,3 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
 	compileOnly 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.17.2'
 }
-
-test {
-	useJUnitPlatform()
-}
