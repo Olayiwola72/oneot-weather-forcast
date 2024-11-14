@@ -5,6 +5,8 @@ import com.oneot.weather_forecast.common.model.Forecast;
 import com.oneot.weather_forecast.common.model.Night;
 import com.oneot.weather_forecast.common.model.Place;
 import com.oneot.weather_forecast.common.repository.ForecastRepository;
+
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +30,6 @@ class ForecastServiceIntegrationTest {
     private ForecastRepository forecastRepository; // Inject the repository to set up test data
 
     private String place;
-    private String today;
 
     @BeforeEach
     void setUp() {
@@ -40,7 +41,7 @@ class ForecastServiceIntegrationTest {
         int tempMin = 15;
         int tempMax = 25;
         String text = "Clear sky";
-        today = LocalDate.now().toString(); // Get today's date
+        String today = LocalDate.now().toString(); // Get today's date
 
         place = "Tallinn";
 

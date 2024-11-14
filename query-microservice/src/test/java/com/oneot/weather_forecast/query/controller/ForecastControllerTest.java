@@ -83,7 +83,7 @@ class ForecastControllerTest {
     @Test
     void testGetAllForecastsByPlace() throws Exception {
         // Perform a GET request to the /places endpoint
-        mockMvc.perform(get(routeConfig.v1Base() + routeConfig.places() + "?place=" + place)
+        mockMvc.perform(get(routeConfig.v1BaseUrl() + routeConfig.places() + "?place=" + place)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk()) // Expect HTTP 200 OK
                 .andExpect(jsonPath("$.status").value(200)) // Assert status in the response wrapper
@@ -94,7 +94,7 @@ class ForecastControllerTest {
     @Test
     void testGetTodayForecast() throws Exception {
         // Perform a GET request to the /today endpoint
-        mockMvc.perform(get(routeConfig.v1Base() + routeConfig.today())
+        mockMvc.perform(get(routeConfig.v1BaseUrl() + routeConfig.today())
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk()) // Expect HTTP 200 OK
                 .andExpect(jsonPath("$.status").value(200)) // Assert status in the response wrapper
