@@ -1,15 +1,10 @@
 package com.oneot.weather_forecast.query.exception;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-
-import java.util.*;
-
+import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.oneot.weather_forecast.common.config.MessageSourceConfig;
 import com.oneot.weather_forecast.common.dto.ErrorResponse;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Path;
 import org.hibernate.ObjectNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,10 +24,12 @@ import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
 
-import com.fasterxml.jackson.databind.exc.MismatchedInputException;
+import java.util.List;
+import java.util.Objects;
 
-import jakarta.validation.ConstraintViolation;
-import jakarta.validation.Path;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 class GlobalExceptionHandlerTest {
 

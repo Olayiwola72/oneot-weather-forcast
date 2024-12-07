@@ -2,7 +2,9 @@ package com.oneot.weather_forecast.common.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 // Test class to test abstract WeatherAttributes, since it cannot be instantiated directly
 class TestWeatherAttributes extends WeatherAttributes {

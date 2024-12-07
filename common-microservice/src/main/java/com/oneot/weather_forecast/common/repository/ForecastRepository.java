@@ -18,7 +18,6 @@ public interface ForecastRepository extends JpaRepository<Forecast, Long> {
     /**
      * Find all forecasts for a given location.
      * The location is matched against the places list in the WeatherPeriod (day or night).
-     *
      * @param place The Place to search for.
      * @return A list of forecasts matching the place.
      */
@@ -31,10 +30,8 @@ public interface ForecastRepository extends JpaRepository<Forecast, Long> {
 
     /**
      * Finds a forecast for a specific date.
-     *
      * This method retrieves a forecast model that matches the provided date.
      * If no forecast exists for the given date, an empty Optional is returned.
-     *
      * @param currentDate The date for which the forecast is to be retrieved, 
      *                    formatted as yyyy-MM-dd.
      * @return An Optional containing the matching Forecast model if found,

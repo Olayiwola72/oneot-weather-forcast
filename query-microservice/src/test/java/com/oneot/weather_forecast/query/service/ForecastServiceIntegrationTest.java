@@ -5,8 +5,6 @@ import com.oneot.weather_forecast.common.model.Forecast;
 import com.oneot.weather_forecast.common.model.Night;
 import com.oneot.weather_forecast.common.model.Place;
 import com.oneot.weather_forecast.common.repository.ForecastRepository;
-
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

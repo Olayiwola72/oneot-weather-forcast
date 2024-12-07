@@ -1,11 +1,11 @@
 package com.oneot.weather_forecast.common.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Represents an error response in the API.

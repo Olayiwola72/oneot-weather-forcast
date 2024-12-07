@@ -1,6 +1,7 @@
 package com.oneot.weather_forecast.query.dto.response;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ApiResponseWrapperTest {

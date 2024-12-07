@@ -1,7 +1,10 @@
 package com.oneot.weather_forecast.common.repository;
 
 import com.oneot.weather_forecast.common.CommonMicroserviceApplication;
-import com.oneot.weather_forecast.common.model.*;
+import com.oneot.weather_forecast.common.model.Day;
+import com.oneot.weather_forecast.common.model.Forecast;
+import com.oneot.weather_forecast.common.model.Night;
+import com.oneot.weather_forecast.common.model.Place;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

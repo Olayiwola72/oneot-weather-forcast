@@ -16,7 +16,7 @@ import java.util.Optional;
 @Service // Indicates that this class is a service component in the Spring context
 public class ForecastService {
 
-    private final ForecastRepository forecastRepository; // Repository for accessing forecast data
+    private final ForecastRepository forecastRepository;
 
     /**
      * Constructor for ForecastService.
@@ -24,7 +24,7 @@ public class ForecastService {
      * @param forecastRepository The repository used to access forecast data.
      */
     public ForecastService(ForecastRepository forecastRepository) {
-        this.forecastRepository = forecastRepository; // Initialize the repository with constructor injection
+        this.forecastRepository = forecastRepository;
     }
 
     /**
